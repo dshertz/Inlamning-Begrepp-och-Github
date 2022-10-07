@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Inlämning - Begrepp och Github</title>
+</head>
+
+<body>
+    <div>
+        <h1>Github flow</h1>
+        <p>Github flow - Vad är det? Hur använder man det? Vilka viktiga delar är inkluderade i begreppet?</p>
+        <p>
+            Företaget GitHub tillhandahåller tjänster för att hosta utvecklingsprojekt där man använder programvaran Git
+            för att hantera versionshistoriken i projektet. Det vill säga, flera personer kan arbeta på ett projekt
+            tillsammans och tydligt följa uppdateringar som gjorts och görs på ett strukturerat sätt.
+            GitHub har definierat ett standardiserat, enkelt arbetssätt som de döpt till GitHub flow. Grunden för
+            arbetssättet är att man skapar en branch och utvecklar filer i den för att sedan merga, slå samman den med
+            huvud-branchen. För att följa ett GitHub flow behöver du ett konto på GitHub.com och ett repository.
+            Huvudstegen i ett GitHub flow är: create a branch, make changes, create a pull request, address review
+            comments, merge your pull request, delete branch. (GitHub Docs - GitHub Inc)
+        </p>
+
+
+        <h2>Create a branch</h2>
+
+        <p>Första steget är att skapa en ny branch, och det är bra att tänka på att ge branchen ett kort och beskrivande
+            namn samt ta hänsyn till eventuella standarder i repot. Fördelen med att skapa en branch att jobba i är att
+            alla som samarbetar i repot kan arbeta samtidigt, utan att det blir konflikt om samma filer. Kollegorna kan
+            också kontrollera dina filer före du slår dom samman med filerna i huvudbranchen. (GitHub Docs - GitHub Inc)
+        </p>
+
+        <h2>Make changes</h2>
+
+        <p>När du har din egen branch så kan du börja göra förändringar. Du kan t.ex. förändra, skapa nya, ta bort eller
+            byta namn på filer. Det är säkert att arbeta i sin egen branch tills dess att du mergar den med
+            huvudbranchen. Det är vanligt att man clonar ett centralt repo från GitHub.com till sin lokala dator för att
+            arbeta på den. (GitHub Docs - GitHub Inc)</p>
+
+        <p>Ett centralt begrepp när du jobbar med GitHub är Pull/Push. Det betyder att du skickar upp (Push) eller
+            laddar ner (Pull) uppdateringar mellan github.com och din dator.</p>
+
+        <p>Nästa centrala begrepp är att göra en commit. Det betyder att du publicerar en förändring i din branch, i det
+            centrala repot.</p>
+
+        <p>Det är bra att försöka isolera kompletta förändringar i olika commits. Har man t.ex. valt att testa två olika
+            vägar så kan man gå tillbaks till rätt commit och göra om vägvalet senare. (GitHub Docs - GitHub Inc)</p>
+
+        <h2>Create a pull request</h2>
+
+        <p>När du har committat klart så är det dags att be dina kollegor om feedback, det kallas att man skapar en pull
+            request. Det finns lite olika funktioner man kan använda när man skapar en request, t.ex. kan ägaren till
+            repot bestämma att det är obligatoriskt att få godkända granskningar före man får merga sitt repo med main
+            branch. Man kan också markera sin request som ett utkast. (GitHub Docs - GitHub Inc)</p>
+
+        <p>Nästa centrala uttryck är issues. Ägaren till repot kan skapa issues, eller en lista av problem som behöver
+            fixas. Sedan kan olika issues delas ut till deltagare som samarbetar i repot. Om din pull request löser ett
+            issue så ska den informationen finnas med så att berört issue kan stängas.</p>
+
+        <h2>Address review comments</h2>
+
+        <p>Nästa steg är att granskare lämnar kommentar, frågor och förslag på delar av eller hela din pull request, och
+            du kan fortsätta att committa förändringar till din pull request som svar på feedbacken. (GitHub Docs -
+            GitHub Inc)</p>
+
+        <h2>Merge your pull request</h2>
+
+        <p>När din pull request är granskad och godkänd så är nästa steg att du mergar eller slår samman din branch med
+            main branch. GitHub kontrollerar så att det inte finns några konflikter före sammanslagning samt behåller
+            även historiken med t.ex. kommentarer och commits. (GitHub Docs - GitHub Inc)</p>
+
+        <h2>Delete your branch</h2>
+
+        <p>Det sista steget efter du mergat din branch till main branch är att radera branchen du arbetat på och
+            tillslut mergat. Men man behöver inte oroa sig för att förlora information då GitHub sparar commits och pull
+            requests så att det är möjligt att återställa helt raderade brancher. (GitHub Docs - GitHub Inc)</p>
+    </div>
+
+    <div>
+        <h1>Flexbox</h1>
+        <p>Vad är det? Hur fungerar det?</p>
+        <p>The Flexible Box Module, eller vanligen Flexbox är en CSS-komponent som skapats för att hantera placering av
+            och distribuering av utrymmet mellan objekt på en hemsida. Flexbox arbetar endimensionellt, vilket här
+            innebär i en dimension åt gången. Antingen horisontellt (rad), eller vertikalt (kolumn). (Mozilla
+            Corporation - MDN Web Docs)</p>
+        <p>Trots att Flexbox arbetar endimensionellt så använder det sig ändå av två axlar, en main-axel och en
+            cross-axel. Man bestämmer ifall man vill ha main-axeln horisontell eller vertikal, sedan blir den vertikala
+            axeln cross-axeln. (Mozilla Corporation - MDN Web Docs)</p>
+        <p>När man placerat sina objekt i en Flexbox så har du fyra olika riktningar för main-axeln att välja på
+            (direkction: flow) Framlänges eller baklänges på rad eller kolumn. Flexboxen heter egentligen flex
+            container, och objekten som placeras inuti flex items. (Mozilla Corporation - MDN Web Docs)</p>
+        <p>En viktig princip med flexbox är att man pratar om start och end istället för left och right. Det är för att
+            göra det mer flexibelt bland annat när man arbetar någonstans där man skriver från höger tlll vänster. Då
+            definieras “start” automatiskt från höger istället. (Mozilla Corporation - MDN Web Docs)</p>
+        <p>För att skapa en flex container ändrar du ett html-objekts (t.ex. en div) display property till flex eller
+            inline-flex. Då blir behållarens direkta children flex items och får inledande en samling
+            standardinställningar, som går att ändra i css-koden. (Mozilla Corporation - MDN Web Docs)</p>
+        <p>Förutom att kontrollera flex-direktion (row/column) så kan du också kontrollera hur dina flex items ska eller
+            inte ska wrappa eller radbryta om containern blir för trång.</p>
+        <p>För att kontrollera sina flex items ytterligare så kan man ändra deras egenskaper som kontrollerar hur dom
+            använder tillgängligt utrymme i flex containern. Det finns tre kategorier av egenskaper att förändra, basis,
+            grow och shrink.</p>
+        <p>flex-basis defineras av tillgängligt utrymme i containern. Autoläget som är standard ser först efter ifall
+            objektet har en definierad storlek, har det inte det så bestämmer objektets innehåll storlek.</p>
+        <p>Flex-grow tillåter att objektet kan växa och ta upp mer av det tillgängliga utrymmet i containern.
+            Flex-shrink gör motsatsen, tillåter objekt att krympa mer om det inte finns nog med utrymme. </p>
+        <p>En nyckelegenskap med flexbox är möjligheten att align och justify content, det vill säga distribuera och
+            rada upp flex-objekten i förhållande till main och cross-axeln. Align kontrollerar beteendet längs med
+            cross-axeln och justify kontrollerar beteendet längs med main-axeln. Man kan t.ex. rada upp objekten i
+            början eller slutet, centrera dom, sprida ut dom med samma mellanrum osv. (Mozilla Corporation - MDN Web
+            Docs)</p>
+    </div>
+
+    <div>
+        <h1>DOM (Document Object Model)</h1>
+
+        <p>Vad är det? Hur manipulerar man DOM?</p>
+
+        <p>DOM eller The Document Object Model kopplar samman hemsidor med script eller programmeringsspråk, oftast
+            JavaScrip. DOM-modellen kan visualiseras som ett träd, där varje gren avslutas med ett objekt. DOM-modellen
+            gör det möjligt att få tillgång till alla delar av trädet och ändra struktor, style och innehåll direkt från
+            JavaScript. Man kan också ha funktioner knutna till objekten som kör igång ifall rätt förutsättningar
+            infaller. (Mozilla Corporation - MDN Web Docs)
+        </p>
+
+        <p>För att komma åt objekt i ett HTML-dokument använder man sig av dokument-gränssnittet i JavaScript. Det finns
+            sedan mängder med underklasser för att kontrollera och manipulerar olika funktioner på HTML-sidan. (Mozilla
+            Corporation - MDN Web Docs</p>
+
+        <p>En styrka med att arbeta med DOM är att man kan uppdatera och förändra objekt på en hemsida utan att ladda om
+            den, t.ex. uppdatera ett sportresultat. Man kan också koppla samman funktioner i JavaScript med
+            interaktioner, exempelvis att användaren klickar på en knapp på hemsidan.
+        </p>
+    </div>
+
+    <div>
+        <h1>Fin kod</h1>
+
+        <p>Vad menas med det begreppet? Varför är det viktigt?</p>
+
+        <p>En kod är fin om den kan förstås av andra utvecklare än hen som har skrivit koden. Är koden fin blir den lätt
+            att förstå, och då blir den också lätt att ändra, lägga till i samt underhålla. (wojteklu. GitHub -
+            clean_code.md)</p>
+
+        <p>För att skapa fin kod behöver man rätta sig efter ett antal regler inom olika områden.</p>
+
+        <p>Några exempel på generella regler är att följa konventioner, försöka hålla koden så enkel som möjligt, att
+            hellre städa upp någon annans kod än att göra det sämre, att söka rotorsaken på problem. (wojteklu. GitHub -
+            clean_code.md)</p>
+
+        <p>Man bör också vara konsekvent och namnge variabler på ett beskrivande och relevant sätt, helst som man kan
+            uttala och söka efter. (wojteklu. GitHub - clean_code.md)</p>
+
+        <p>Funktioner ska vara små och göra en sak med så få argument som möjligt. (wojteklu. GitHub - clean_code.md)
+        </p>
+
+        <p>Man ska helst förklara sig själv genom koden, eller koden ska förklara sig själv. Man ska försöka att inte
+            lägga till överflödiga kommentarer. Kod ska inte kommenteras ut, utan skall tas bort. (wojteklu. GitHub -
+            clean_code.md) </p>
+
+        <p>Det var några viktiga exempel på regler och det finns många fler. Uttrycket Clean Code kommer från början
+            från utveklaren och författaren Robert Cecil Martins bok, Clean Code från 2009.</p>
+
+    </div>
+
+    <div>
+        <h1>Ramverk</h1>
+        <p>Inom webbutveckling använder man begreppet ramverk, vad är det? Beskriv vad det är och berätta lite mer om
+            två valfria.</p>
+
+        <p>Web Application Framework är ett mjukvaruramverk som är skapat för att snabba upp och underlätta utvecklingen
+            av internettjänster och applikationer. Ramverken består ofta av bibliotek där man kan hämta färdig kod för
+            olika funktioner mm.
+        </p>
+
+        <p>Två ramverk inom webutveckling är bootstrap och .NET. Bootstrap skapades med målet att designen ska utgå från
+            mobilen och skalas upp därifrån. Bootstrap är ett CSS-ramverk med färdigskriven CSS-kod som gör det möjligt
+            att snabbt bygga snygga och mycket interaktiva hemsidor på enkelt sätt, genom att tilldela objekt på din
+            HTML-sida fördefinierade klasser med tillhörande egenskaper.</p>
+
+        <p>ASP.NET är ett ramverk utvecklat av Microsoft för att bygga robusta webbapplikationer.</p>
+
+    </div>
+
+    <div>
+        <h1>Referenslista</h1>
+
+        <p>GitHub Docs - GitHub Inc. GitHub flow. Tillgänglig:
+            https://docs.github.com/en/get-started/quickstart/github-flow. Läst: 07.10.2022.</p>
+
+        <p>Mozilla Corporation - MDN Web Docs. Basic concepts of flexbox. Last modified: Sep 28, 2022, by MDN
+            contributors. Tillgänglig:
+            https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox. Läst:
+            07.10.2022.</p>
+
+        <p>Mozilla Corporation - MDN Web Docs. Document Object Model (DOM). Last modified: Sep 9, 2022, by MDN
+            contributors. Tillgänglig: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model. Läst:
+            07.10.2022.</p>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Github flow - Vad är det? Hur använder man det? Vilka viktiga delar är inkluderade i begreppet?
+
+    Flexbox - Vad är det? Hur fungerar det?
+
+    DOM (Document Object Model) - Vad är det? Hur manipulerar man DOM?
+
+    Fin kod - Vad menas med det begreppet? Varför är det viktigt?
+
+    Ramverk - Inom webbutveckling använder man begreppet ramverk, vad är det? Beskriv vad det är och berätta lite mer om
+    två valfria.
+
+</body>
+
+</html>
